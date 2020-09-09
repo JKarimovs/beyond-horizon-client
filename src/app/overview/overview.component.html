@@ -1,0 +1,39 @@
+
+<div class="overview-wrapper">
+  
+  <button mat-stroked-button class="ov-button">Approach</button>
+  <button mat-stroked-button class="ov-button">Warp to</button>
+  <button mat-stroked-button class="ov-button">Orbit</button>
+  <button mat-stroked-button class="ov-button">Target</button>
+  <button mat-stroked-button class="ov-button">Dock</button>
+
+  <div class="overview-container">
+    <div class="mat-elevation-z8">
+      <table mat-table class="full-width-table" matSort aria-label="Elements">
+        <!-- Id Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+          <td mat-cell *matCellDef="let row">{{row.id}}</td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+          <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Table Header -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true" class="table-header"></tr>
+
+        <!-- Table Rows -->
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="table-row"
+            [ngClass]="{ 'selected': selection.isSelected(row)}"
+            (click)="selection.select(row)">
+        </tr>
+
+      </table>
+    </div>
+  </div>
+
+</div>
+

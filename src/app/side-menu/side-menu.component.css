@@ -1,0 +1,39 @@
+/* Removes the annoying preset padding from sidenav content */
+:host /deep/ .mat-list-item-content {
+  padding: 0!important;
+}
+
+/* Change hover effect color in sidenav buttons */
+:host /deep/ .mat-list-item-content :hover {
+  background-color: #505050;
+}
+
+/* remove margin from mat-display-2 ( usually applied to headings ) */
+:host /deep/ .mat-display-2 {
+  margin: 0 10px;
+  font-family: Halcyon;
+  font-weight: 100;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  background-color: #202020;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+.icon {
+  margin: 5px 0;
+}

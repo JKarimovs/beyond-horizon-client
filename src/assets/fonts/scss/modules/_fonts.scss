@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Halcyon';
+    src: url('/assets/fonts/regular/Halcyon-Regular.woff2') format('woff2'),
+        url('/assets/fonts/regular/Halcyon-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halcyon';
+    src: url('/assets/fonts/thin/Halcyon-Thin.woff2') format('woff2'),
+        url('/assets/fonts/thin/Halcyon-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,43 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-nav-list>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/9/91/Settings.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/b/b0/Member.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/0/01/Biography.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/2/2f/Skills.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/2/2d/Evemail.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/c/c7/Wallet.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/d/db/Inventory.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/6/6d/Cargo.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/9/92/Assets.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/9/9f/Market.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/1/13/Industry.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/4/43/Map.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/5/52/Planets.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/2/2a/Augmentations.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/2/23/Calculator.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/2/2a/Notepad.png" width="40" height="40"></a>
+      <a mat-list-item class="icon" href="#"><img alt="Assets" src="https://wiki.eveuniversity.org/images/f/f6/Chatchannels.png" width="40" height="40"></a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span><h1 class="mat-display-2">BEYOND HORIZON ONLINE</h1></span>
+    </mat-toolbar>
+
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
