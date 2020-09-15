@@ -1,0 +1,25 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>Log in</mat-card-title>
+        </mat-card-header>
+
+        <form class="form">
+            <mat-card-content>
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Email" #emailEl required>
+                </mat-form-field>
+
+                <mat-form-field class="full-width">
+                    <input matInput type="password" placeholder="Password" #passEl required>
+                </mat-form-field>
+            </mat-card-content>
+
+            <button mat-stroked-button (click)="loginUser(emailEl.value, passEl.value)" color="primary" class="btn-block">Log in</button>
+        </form>
+        
+        <span class="registerBtn">
+            <a routerLink="/register">Register</a>
+        </span>
+    </mat-card> 
+</div>

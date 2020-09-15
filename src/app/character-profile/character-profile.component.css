@@ -1,0 +1,9 @@
+.char-prof-interface {
+    position: absolute;
+    float: left;
+    margin: 5px 0 0 45px;
+    width: 500px;
+    height: 600px;
+    background-color: #181818;
+    opacity: 0.9;
+}

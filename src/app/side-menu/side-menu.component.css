@@ -15,6 +15,10 @@
   font-weight: 100;
 }
 
+.active {
+  background-color: #505050;
+}
+
 .sidenav-container {
   height: 100%;
 }
@@ -33,7 +37,18 @@
   z-index: 1;
 }
 
-
 .icon {
   margin: 5px 0;
+}
+
+.navbar-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar a {
+  float: right;
+  margin-right: 1em;
+  color: #a3a3a3;
+  text-decoration: none;
+  font-weight: 300;
 }

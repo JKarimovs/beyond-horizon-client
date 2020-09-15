@@ -1,32 +1,22 @@
 .game-window {
-    position: relative;
+    width: auto;
+    overflow: hidden;
     height: 100vh;
+    padding-bottom: 200px;
     background-image: url(./../../assets/images/artwork/backgrounds/julian-calle-spacestation.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
+.overview {
+    margin-left: auto;
+}
+
 .bottom-panel {
     position: absolute;
     bottom: 0;
-    /* right: 350px; */
     width: 100%;
     height: 200px;
     background-color: #181818;
     opacity: 0.9;
-}
-
-.right-panel {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 350px;
-    height: 100%;
-    background-color: #181818;
-    text-align: center;
-    z-index: 20;
-}
-
-.right-panel h3 {
-    margin-top: 1em;
 }
